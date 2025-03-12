@@ -1,0 +1,13 @@
+{
+  "tasks": {
+    "dev"   : "deno run --allow-net --allow-env=GOOGLE_AI_GATEWAY_PORT --watch main.ts"
+  },
+  "deploy": {
+    "entrypoint": "main.ts",
+    "exclude": [".vscode"]
+  },
+  "imports": {
+    "@oak/oak"   : "jsr:@oak/oak@^17.1.4",
+    "@std/assert": "jsr:@std/assert@1"
+  }
+}
